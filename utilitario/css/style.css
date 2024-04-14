@@ -1,18 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 body {
     margin: 0%;
     padding: 0%;
     border: 0%;
-    background-color: cadetblue;
+    background-color: #5fa08a;
 }
 
 nav {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     padding: 15px;
     width: 100%;
-    height: 3rem;
+    height: 5rem;
     position: sticky;
-    background-color: black;
+    background-color: #022b0f;
+    flex-direction: row;
+
+}
+
+input {
+    background-color: #b1ffc5;
+    border-radius: 1rem;
+    padding-inline: 1rem;
+    font-size: larger;
+    width: 100%;
+}
+
+label {
+    font-weight: 800;
+}
+
+label.login {
+    font-size: larger;
+    display: flex;
+    align-self: flex-start;
+}
+
+.navegador {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.centralizado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    padding-top: 5%;
+    display: flex;
+    height: 50%;
+    width: 40%;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    size: 7rem;
+
+}
+
+.form.login {}
+
+a.login {
+    font-size: 1.2rem;
+    color: #2e4103;
+}
+
+.Logo {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 3rem;
+    color: #6ba07c;
 }
