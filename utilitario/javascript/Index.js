@@ -1,3 +1,13 @@
+const sidebar = document.getElementById("sidebar")
+function SideClose() {
+    sidebar.setAttribute("style", "display:none;")
+}
+function SideOpen() {
+    sidebar.removeAttribute("style")
+}
+
+
+
 const form = document.getElementById("formulario");
 const cpf = document.getElementById("cpf");
 const pass = document.getElementById("pass");

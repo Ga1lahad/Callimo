@@ -1,79 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poetsen+One&display=swap');
 
-body {
-    margin: 0%;
-    padding: 0%;
-    border: 0%;
-    background-color: #5fa08a;
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    width: 100%;
-    height: 5rem;
-    position: sticky;
-    background-color: #022b0f;
-    flex-direction: row;
-
-}
-
-input {
-    background-color: #b1ffc5;
-    border-radius: 1rem;
-    padding-inline: 1rem;
-    font-size: larger;
-    width: 100%;
-}
-
-label {
-    font-weight: 800;
-}
-
-label.login {
-    font-size: larger;
-    display: flex;
-    align-self: flex-start;
-}
-
-.navegador {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.centralizado {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-form {
-    padding-top: 5%;
-    display: flex;
-    height: 50%;
-    width: 40%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    size: 7rem;
-
-}
-
-.form.login {}
-
-a.login {
-    font-size: 1.2rem;
-    color: #2e4103;
-}
-
-.Logo {
-    font-family: "Lobster", sans-serif;
-    font-weight: 400;
+.sidebar {
+    font-size: 30px;
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
     font-style: normal;
+    padding: 2vh 3vh 2vh 0vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #262027;
+    position: sticky;
+    left: 0px;
+    width: 30vh;
+    height: 96vh;
+    color: rgb(0, 255, 98);
+    transition: 300ms, ease-in-out;
+    z-index: 2;
+}
+
+.sidelink {
     text-decoration: none;
-    font-size: 3rem;
-    color: #6ba07c;
+}
+
+.sidelink:visited {
+    color: rgb(0, 255, 98);
+}
+
+.sidelink:hover {
+    color: rgb(0, 129, 50);
+}
+
+.sidetitle {
+    font-size: 50px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(0, 255, 98);
+}
+
+.sidetitle:hover {
+    color: rgb(0, 129, 50);
+}
+
+.sidebutton {
+    position: absolute;
+    right: 13px;
+    top: 12px;
+}
+
+.sidebutton button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.sidebutton img {
+    max-width: 4vw;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.sideheader {
+    display: flex;
+    flex-direction: row;
+    padding: 2vh 0vh 15vh 0vh;
+}
+
+.sideheader:hover {
+    cursor: default;
+}
+
+.navbar {
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    top: 0vh;
+    display: flex;
+    background: #262027;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.navlogo {
+    font-size: 30px;
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    align-items: center;
+
+}
+
+.navbutton {
+    position: absolute;
+    left: 13px;
+    top: 1rem;
+}
+
+.navbutton button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navbutton img {
+    max-width: 4vw;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.corpo-principal {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
 }

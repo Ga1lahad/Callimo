@@ -16,16 +16,10 @@ if (!empty($_POST)) {
     <title>Menu Inicia</title>
 </head>
 
-<body>
-    <nav>
-        <a href=""><img style="max-width: 4rem;" src="utilitario/imgs/menu.png" alt=""></a>
-        <div class="navegador">
-            <a class="Logo" href="#">
-                <h1>Callimo</h1>
-            </a>
-        </div>
-    </nav>
-    <div class="centralizado">
+<body class="corpo-principal">
+    <?php require "utilitario/components/sidebar.html"; ?>
+    <?php require "utilitario/components/navbar.html"; ?>
+    <div>
         <form id="formulario" class="login" method="POST">
             <label class="login" for="cpf">CPF</label>
             <input name="cpf" id="cpf" type="text" maxlength="14">
