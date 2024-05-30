@@ -1,0 +1,98 @@
+nav {
+    z-index: 3;
+}
+
+.navbar {
+    font-size: 30px;
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #262027;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 5vh;
+    color: rgb(0, 255, 98);
+    transition: 300ms, ease-in-out;
+}
+
+.navtitle {
+    font-size: 50px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(0, 255, 98);
+}
+
+.navtitle:hover {
+    color: rgb(0, 129, 50);
+}
+
+.navbutton {
+    position: relative;
+    right: 40vw;
+    top: 3px;
+}
+
+.navbutton button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navbutton img {
+    max-width: 3.5rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navheader {
+    display: flex;
+    flex-direction: row;
+    padding: 0vh 0vh 0vh 0vh;
+}
+
+.navheader:hover {
+    cursor: default;
+}
+
+.sidebar {
+    padding: 3vh 3vh 3vh 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 20rem;
+    background-color: #262027;
+    transition: left 800ms;
+}
+
+.sidebutton {
+    position: relative;
+    left: 8rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.sidebutton img {
+    max-width: 3.5rem;
+}
+
+.sidelink {
+    text-decoration: none;
+}
+
+.sidelink:visited {
+    color: rgb(0, 255, 98);
+}
+
+.sidelink:hover {
+    color: rgb(0, 129, 50);
+}

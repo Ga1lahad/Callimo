@@ -11,15 +11,15 @@ if (!empty($_POST)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="utilitario/css/style.css">
+    <link rel="stylesheet" href="utilitarios/css/style.css">
 
     <title>Menu Inicia</title>
 </head>
+<?php require "utilitarios/components/navbar.html"; ?>
 
-<body class="corpo-principal">
-    <?php require "utilitario/components/sidebar.html"; ?>
-    <?php require "utilitario/components/navbar.html"; ?>
-    <div>
+<body>
+
+    <div class="corpo-principal">
         <form id="formulario" class="login" method="POST">
             <label class="login" for="cpf">CPF</label>
             <input name="cpf" id="cpf" type="text" maxlength="14">
@@ -33,6 +33,6 @@ if (!empty($_POST)) {
 
     </div>
 </body>
-<script src="utilitario/javascript/Index.js"></script>
+<script src="utilitarios/javascript/login.js"></script>
 
 </html>

@@ -1,9 +1,15 @@
 const sidebar = document.getElementById("sidebar")
-function SideClose() {
-    sidebar.setAttribute("style", "display:none;")
+function sideClose() {
+    sidebar.setAttribute("style", "left:-100%;");
+    setTimeout(() => {
+        sidebar.setAttribute("style", "display:none;");
+    }, 500);
 }
-function SideOpen() {
-    sidebar.removeAttribute("style")
+function sideOpen() {
+    sidebar.setAttribute("style", "left:-100%;");
+    setTimeout(() => {
+        sidebar.removeAttribute("style");
+    }, 10);
 }
 
 
